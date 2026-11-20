@@ -4,8 +4,7 @@
 # NAT Gateways are recommended instead.
 
 module "nat_instance_label" {
-  source  = "SevenPico/context/null"
-  version = "2.0.0"
+  source = "git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0"
 
   attributes = ["nat", "instance"]
 

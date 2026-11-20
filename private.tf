@@ -1,6 +1,5 @@
 module "private_label" {
-  source  = "SevenPico/context/null"
-  version = "2.0.0"
+  source = "git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0"
 
   attributes = [var.private_label]
   tags = merge(
