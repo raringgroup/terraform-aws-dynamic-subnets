@@ -530,7 +530,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-Derived from Cloud Posse's upstream module [terraform-aws-dynamic-subnets](https://github.com/cloudposse/terraform-aws-dynamic-subnets).
+Derived from Cloud Posse's upstream module [terraform-aws-dynamic-subnets](https://github.com/cloudposse/terraform-aws-dynamic-subnets), Copyright 2017-2025 Cloud Posse, LLC.
 
 
 
