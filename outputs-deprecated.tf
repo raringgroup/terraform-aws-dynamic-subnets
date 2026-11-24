@@ -1,3 +1,21 @@
+## ----------------------------------------------------------------------------
+## Copyright 2026 Raring Group LLC
+## Copyright 2017-2025 Cloud Posse, LLC
+## Modified by Raring Group LLC from cloudposse/terraform-aws-dynamic-subnets.
+##
+## Licensed under the Apache License, Version 2.0 (the "License");
+## you may not use this file except in compliance with the License.
+## You may obtain a copy of the License at
+##
+##     http://www.apache.org/licenses/LICENSE-2.0
+##
+## Unless required by applicable law or agreed to in writing, software
+## distributed under the License is distributed on an "AS IS" BASIS,
+## WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+## See the License for the specific language governing permissions and
+## limitations under the License.
+## ----------------------------------------------------------------------------
+
 output "nat_gateway_public_ips" {
   description = "DEPRECATED: use `nat_ips` instead. Public IPv4 IP addresses in use by NAT."
   value       = local.need_nat_eip_data ? var.nat_elastic_ips : aws_eip.default.*.public_ip

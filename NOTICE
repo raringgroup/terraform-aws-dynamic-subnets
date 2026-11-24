@@ -1,0 +1,14 @@
+terraform-aws-dynamic-subnets
+Copyright 2026 Raring Group LLC
+
+This product includes software developed by Raring Group LLC (https://github.com/raringgroup).
+
+Portions of this software are derived from terraform-aws-dynamic-subnets (https://github.com/cloudposse/terraform-aws-dynamic-subnets),
+Copyright 2017-2025 Cloud Posse, LLC, licensed under the Apache License, Version 2.0.
+The _context.tf files (root and examples) are derived from terraform-null-label (https://github.com/cloudposse/terraform-null-label),
+Copyright 2017-2020 Cloud Posse, LLC, licensed under the Apache License, Version 2.0.
+Modifications by Raring Group LLC:
+- Replaced the upstream label module (cloudposse/label/null, module.this) with the Raring Group context module (terraform-null-context, module.context) in all modules and examples.
+- Added the outpost_arn input and AWS Outposts subnet handling; the upstream nat_gateway_public_subnet_indices and related NAT placement inputs are not present.
+- Narrowed the AWS provider constraint to >= 5.0, < 7.0.
+Files carried over from upstream unmodified: moved.tf, variables-deprecated.tf, outputs.tf, examples/complete/outputs.tf, examples/multiple-subnets-per-az/outputs.tf.
