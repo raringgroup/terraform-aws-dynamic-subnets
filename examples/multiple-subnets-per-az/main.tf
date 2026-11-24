@@ -21,8 +21,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source  = "SevenPico/vpc/aws"
-  version = "3.0.0"
+  source = "git::https://github.com/raringgroup/terraform-aws-vpc.git?ref=v0.1.1"
 
   ipv4_primary_cidr_block = "172.16.0.0/16"
 
